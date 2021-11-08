@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>MatchCasts - Where Brands Go Audio | Podcast Advertising and Podcast Discovery</title>
+    <meta name="description" content="MatchCasts – Where Brands Go Audio – Podcast Advertising and Podcast Discovery">
+    <%= csrf_meta_tags %>
+    <%= action_cable_meta_tag %>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <%= render 'shared/favicon' %>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,700|Roboto+Slab:400,700&display=swap&subset=latin-ext" rel="stylesheet">
+
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= stylesheet_pack_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+    <%= yield %>
+  </body>
+</html>

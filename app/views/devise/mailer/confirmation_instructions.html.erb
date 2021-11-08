@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en" class="gr__projectuat_com"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <!-- utf-8 works for most cases -->
+    <meta name="viewport" content="width=device-width"> <!-- Forcing initial-scale shouldn't be necessary -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!-- Use the latest (edge) version of IE rendering engine -->
+    <title>Matchcasts - Where Brands Goes Audio | Podcasts Advertising and Podcast Discovery</title> <!-- The title tag shows in email notifications, like Android 4.4. -->
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700');
+    </style>
+    <style type="text/css">
+
+        /* What it does: Remove spaces around the email design added by some email clients. */
+        /* Beware: It can remove the padding / margin and add a background color to the compose a reply window. */
+        html,
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100% !important;
+            width: 100% !important;
+            font-family: Roboto, Arial, sans-serif;
+        }
+
+        /* What it does: Stops email clients resizing small text. */
+        * {
+            -ms-text-size-adjust: 100%;
+            -webkit-text-size-adjust: 100%;
+        }
+
+        /* What it does: Forces Outlook.com to display emails full width. */
+        .ExternalClass {
+            width: 100%;
+        }
+
+        /* What it does: Stops Outlook from adding extra spacing to tables. */
+        table,
+        td {
+            mso-table-lspace: 0pt;
+            mso-table-rspace: 0pt;
+        }
+
+        /* What it does: Fixes webkit padding issue. */
+        table {
+            border-spacing: 0 !important;
+        }
+
+        /* What it does: Fixes Outlook.com line height. */
+        .ExternalClass,
+        .ExternalClass * {
+            line-height: 100%;
+        }
+
+        /* What it does: Fix for Yahoo mail table alignment bug. */
+        table {
+            border-collapse: collapse;
+            margin: 0 auto;
+        }
+
+        /* What it does: Uses a better rendering method when resizing images in IE. */
+        img {
+            -ms-interpolation-mode: bicubic;
+        }
+
+        /* What it does: Overrides styles added when Yahoo's auto-senses a link. */
+        .yshortcuts a {
+            border-bottom: none !important;
+        }
+
+        /* What it does: Overrides blue, underlined link auto-detected by iOS Mail. */
+        /* Create a class for every link style needed; this template needs only one for the link in the footer. */
+        .mobile-link--footer a {
+            color: #666666 !important;
+        }
+
+        /* What it does: Overrides styles added images. */
+        img {
+            border: 0 !important;
+            outline: none !important;
+            text-decoration: none !important;
+        }
+
+        .columnConnect {
+            width: 50%;
+        }
+
+        /* Media Queries */
+        @media screen and (max-device-width: 600px), screen and (max-width: 600px) {
+            /* Targets only Gmail Android */
+            div > u ~ div .wrapper {min-width: 100%;}
+
+            /* Targets both Gmail iOS and Gmail Android (Nexus, pixel) */
+            u ~ div .wrapper {min-width: 100vw;}
+            /* What it does: Overrides email-container's desktop width and forces it into a 100% fluid width. */
+            .email-container {
+                width: 100% !important;
+            }
+
+            /* What it does: Forces images to resize to the width of their container. */
+            img[class="fluid"],
+            img[class="fluid-centered"] {
+                width: 100% !important;
+                max-width: 100% !important;
+                height: auto !important;
+                margin: auto !important;
+            }
+
+            /* And center justify these ones. */
+            img[class="fluid-centered"] {
+                margin: auto !important;
+            }
+
+            /* What it does: Forces table cells into full-width rows. */
+            td[class="stack-column"],
+            td[class="stack-column-center"] {
+                display: block !important;
+                width: 100% !important;
+                direction: ltr !important;
+            }
+
+            /* And center justify these ones. */
+            td[class="stack-column-center"] {
+                text-align: center !important;
+            }
+
+            /* Data Table Styles */
+            /* What it does: Hides table headers */
+            td[class="data-table-th"] {
+                display: none !important;
+            }
+
+            /* What it does: Change the look and layout of the remaining td's */
+            td[class="data-table-td"],
+            td[class="data-table-td-title"] {
+                display: block !important;
+                width: 100% !important;
+                border: 0 !important;
+            }
+
+            /* What it does: Changes the appearance of the first td in each row */
+            td[class="data-table-td-title"] {
+                font-weight: bold;
+                color: #333333;
+                padding: 10px 0 0 0 !important;
+                border-top: 2px solid #eeeeee !important;
+            }
+
+            /* What it does: Changes the appearance of the other td's in each row */
+            td[class="data-table-td"] {
+                padding: 5px 0 0 0 !important
+            }
+
+            /* What it does: Provides a visual divider between table rows. In this case, a bit of extra space. */
+            td[class="data-table-mobile-divider"] {
+                display: block !important;
+                height: 20px;
+            }
+
+            /* END Data Table Styles */
+
+        }
+        @media only screen and (max-width: 480px){
+            /* ======== Column Styles ======== */
+
+            .templateColumnContainer{display:block !important; width:100% !important;}
+
+            /**
+            * @tab Mobile Styles
+            * @section column image
+            * @tip Make the column image fluid for portrait or landscape view adaptability, and set the image's original width as the max-width. If a fluid setting doesn't work, set the image width to half its original size instead.
+            */
+            .columnImage{
+                height:auto !important;
+                /*@editable*/ max-width:480px !important;
+                /*@editable*/ width:100% !important;
+            }
+
+            /**
+            * @tab Mobile Styles
+            * @section left column text
+            * @tip Make the left column content text larger in size for better readability on small screens. We recommend a font size of at least 16px.
+            */
+            .leftColumnContent{
+                /*@editable*/ font-size:16px !important;
+                /*@editable*/ line-height:125% !important;
+            }
+
+            /**
+            * @tab Mobile Styles
+            * @section right column text
+            * @tip Make the right column content text larger in size for better readability on small screens. We recommend a font size of at least 16px.
+            */
+            .rightColumnContent{
+                /* font-size:16px !important;*/ /*Editable*/
+                /*@editable*/ line-height:125% !important;
+            }
+
+            .centerColumnContent {
+                /*display: none;*/
+                display:block !important; width:100% !important;
+                margin: 20px 0 !important;
+            }
+
+            .centerColumnContent.centerColumnContent--short-space {
+                margin: 10px 0;
+            }
+
+            .hideOnMobile {
+                display: none;
+            }
+
+            .columnConnect,
+            .columnCall {
+                padding: 0 !important;
+            }
+
+            .viewBrowser {
+                text-align: left !important;
+            }
+            /* line height title on mobile */
+            .title-line-height-mobile{
+                line-height: 1.34 !important;
+            }
+
+            .bottom-wrapper {
+                padding: 30px 30px !important;
+            }
+
+            .social-wrapper {
+                padding-bottom: 0 !important;
+            }
+
+            .connect-with-us {
+                padding-top: 0 !important;
+            }
+
+            .text-container {
+                padding-left: 30px !important;
+                padding-right: 30px !important;
+            }
+        }
+    </style>
+    <!--[if mso]>
+    <style type="text/css">
+        .fallback-font {
+            font-family: Arial, sans-serif, Helvetica;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+    </style>
+    <![endif]-->
+</head>
+<body leftmargin="0" topmargin="0" marginwidth="0" marginheight="0" bgcolor="#FFFFFF" style="margin:0; padding:0; -webkit-text-size-adjust:none; -ms-text-size-adjust:none;" data-gr-c-s-loaded="true" cz-shortcut-listen="true">
+<table class="wrapper" cellpadding="0" cellspacing="0" border="0" width="100%" bgcolor="#FFFFFF" style="border-collapse:collapse; max-width: 100%; width: 100%;">
+    <tbody><tr>
+        <td width="100%"style="vertical-align: top;">
+
+            <!-- Visually Hidden Preheader Text : BEGIN -->
+            <div style="display:none;font-size:1px;color:#222222;line-height:1px;max-height:0px;max-width:0px;opacity:0;overflow:hidden;mso-hide: all;">
+                <!-- TODO - Change subtitle -->
+                💥 Activate your MatchCasts account💥
+            </div>
+            <!-- Visually Hidden Preheader Text : END -->
+
+            <!-- Email wrapper : BEGIN -->
+            <!--[if mso]>
+            <table align="center" cellpadding="0" cellspacing="0" border="0" height="100%" width="600" style="border-collapse:collapse; width: 600px; max-width: 100%;">
+            <![endif]-->
+            <table align="center" valign="top" width="600" border="0" cellpadding="0" cellspacing="0" style="max-width: 600px; width:100%; margin: auto;" class="email-container">
+                <tbody>
+                <tr>
+                    <td width="100%">
+                        <!-- Logo + Links : BEGIN -->
+                        <table align="center" valign="top" border="0" width="100%" cellpadding="0" cellspacing="0" bgcolor="#ffffff">
+                            <tbody>
+                            <tr>
+                                <td width="100%" valign="top" style="padding: 0 0;">
+                                    <!--[if mso]>
+                                    <table align="center" cellpadding="0" cellspacing="0" border="0" height="100%" width="600" style="border-collapse:collapse; width: 600px; max-width: 100%;">
+                                    <![endif]-->
+                                    <table align="center" valign="top" border="0" width="600" cellpadding="0" cellspacing="0" style="max-width: 600px; width: 100%;">
+                                        <tbody>
+                                        <tr>
+                                            <td align="center" valign="top" width="100%" style="padding: 0 20px">
+                                                <table border="0" width="600" cellpadding="0" cellspacing="0" style="max-width: 600px; width: 100%;">
+                                                    <tbody>
+                                                    <tr>
+                                                        <td style="text-align: center;">
+                                                            <div>
+                                                                <a href="https://matchcasts.com/" target="_blank">
+                                                                    <!-- TODO - Change to media server -->
+                                                                    <img src="https://web.matchcasts.com//images/logo.jpg" alt="Matchcasts" width="" height="150" border="0">
+                                                                </a>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    </tbody>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                    <!--[if mso]>
+                                    </table>
+                                    <![endif]-->
+                                </td>
+                            </tr>
+                            </tbody>
+                        </table>
+                        <!-- Logo + Links : END -->
+
+                        <!-- Main Email Body : BEGIN -->
+                        <table align="center" valign="top" border="0" width="100%" cellpadding="0" cellspacing="0" bgcolor="#ffffff">
+                            <tbody>
+                            <tr>
+                                <td class="fallback-font" align="center" valign="top" style="padding: 0 0; font-family: Roboto, Arial, sans-serif; font-size: 15px; font-weight: 400; line-height: 1.6; color: #182E45;">
+                                    <!--[if mso]>
+                                    <table cellpadding="0" cellspacing="0" border="0" height="100%" width="600" style="border-collapse:collapse; width: 600px; max-width: 100%;">
+                                    <![endif]-->
+                                    <table border="0" width="600" cellpadding="0" cellspacing="0" style="max-width: 600px; width: 100%;">
+                                        <tbody>
+                                        <tr>
+                                            <td class="text-container" align="center" valign="top" width="100%" style="padding: 0 20px">
+                                                <table border="0" width="600" cellpadding="0" cellspacing="0" style="max-width: 600px; width: 100%;">
+                                                    <tbody>
+                                                    <tr>
+                                                        <td class="title-line-height-mobile" style="max-width: 600px; margin: 0 auto; font-weight: 700; padding-bottom: 20px; font-size: 20px;">
+                                                            Hello <%= @resource.name %>,
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td style="max-width: 600px; margin: 0 auto; padding-bottom: 20px;font-size: 18px;">
+                                                            You’re just a click away from running your brand audio campaign on MatchCasts!
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td style="max-width: 600px; margin: 0 auto; padding-bottom: 30px;font-size: 18px;">
+                                                            Hit the button to verify your email and activate your account.
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td style="padding-bottom: 20px;">
+                                                            <div>
+                                                                <!-- TODO - Change 2 hrefs #abc to real links -->
+                                                                <!--[if mso]>
+                                                                <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="<%=  confirmation_url(@resource, confirmation_token: @token) %>" style="height:54px;v-text-anchor:middle;width:225px;" arcsize="4%" stroke="f" fillcolor="#66327C">
+                                                                    <w:anchorlock/>
+                                                                    <center>
+                                                                <![endif]-->
+                                                                <a href="<%= confirmation_url(@resource, confirmation_token: @token) %>" target="_blank"
+                                                                   style="background-color:#66327C;border-radius:4px;color:#ffffff;display:inline-block;font-family:Arial,sans-serif;line-height:54px;text-align:center;text-decoration:none;width:225px;-webkit-text-size-adjust:none;font-size: 18px;font-weight: normal;">Activate my account</a>
+                                                                <!--[if mso]>
+                                                                </center>
+                                                                </v:roundrect>
+                                                                <![endif]-->
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    </tbody>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                    <!--[if mso]>
+                                    </table>
+                                    <![endif]-->
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="fallback-font" align="center" valign="top" style="padding: 0;font-size: 12px; font-weight: 300;font-family: Roboto, Arial, sans-serif; line-height: 1; color: #4D4D4F;">
+                                    <!-- BEGIN FOOTER // -->
+                                    <!--[if mso]>
+                                    <table cellpadding="0" cellspacing="0" border="0" height="100%" width="600" style="border-collapse:collapse; width: 600px; max-width: 100%;">
+                                    <![endif]-->
+                                    <table border="0" cellpadding="0" cellspacing="0" width="600" style="background-color: white;max-width: 600px; width: 100%;">
+                                        <tr>
+                                            <td style="padding: 20px 20px; border-top: 1px solid #ccc">
+                                                <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                                    <tbody>
+                                                    <tr>
+                                                        <td style="font-size: 14px; font-weight: 400; padding-bottom: 10px; text-align: center;">
+                                                            This link will self-destruct in 1 hour.
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td style="font-size: 14px; font-weight: 400; padding-bottom: 20px; text-align: center;">
+                                                            Didn’t ask for this email? Just ignore me.
+                                                        </td>
+                                                    </tr>
+                                                    </tbody>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                    <!--[if mso]>
+                                    </table>
+                                    <![endif]-->
+                                    <!-- // END FOOTER -->
+                                </td>
+                            </tr>
+                            <!-- Full Width, Fluid Column : END -->
+
+                            </tbody>
+                        </table>
+                        <!-- Main Email Body : END -->
+
+                    </td>
+                </tr>
+
+                <!-- Footer : BEGIN -->
+                <!-- Footer : END -->
+
+                </tbody>
+            </table>
+            <!--[if mso]>
+            </table>
+            <![endif]-->
+            <!-- Email wrapper : END -->
+
+        </td>
+    </tr>
+    </tbody></table>
+
+
+</body>
+</html>

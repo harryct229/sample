@@ -1,0 +1,24 @@
+//
+/* SETTINGS ===================================================== */
+/* Global variables, anything that is global for the project ==== */
+$color--border: rgb(203, 219, 238);
+
+$gray-base: #080604;
+$gray-darker: #221710;
+$gray-dark:  #3f2b1e;
+$gray: #3d6372;
+$gray-light: #859fb8;  
+$gray-lighter: #eaeff5;
+
+$brand-info: #80bcdc; 
+$brand-success: #c9db8a;
+$brand-primary: #0079ba; 
+$brand-warning: #e1c345;
+$brand-danger: #e5734b;
+
+
+$font-family-sans-serif: "Roboto",-apple-system,BlinkMacSystemFont,"Segoe UI","Helvetica Neue",Arial,sans-serif;
+$font-family-serif: "Roboto Slab",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+$font-family-monospace: Menlo, Monaco, Consolas, "Courier New", monospace;
+$font-family-base: $font-family-sans-serif;
+
